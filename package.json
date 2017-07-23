@@ -1,8 +1,10 @@
 {
   "author": "Florian Keller <github@floriankeller.de>",
-  "devDependencies": {
-    "jasmine": "2.6.0",
+  "dependencies": {
     "neon-cli": "0.1.18"
+  },
+  "devDependencies": {
+    "jasmine": "2.6.0"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -11,7 +13,7 @@
   "scripts": {
     "build": "neon build",
     "test": "jasmine",
-    "start": "yarn build && yarn test"
+    "postinstall": "npm run build"
   },
   "version": "0.0.1"
 }
