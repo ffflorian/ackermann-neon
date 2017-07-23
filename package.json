@@ -1,0 +1,17 @@
+{
+  "author": "Florian Keller <github@floriankeller.de>",
+  "devDependencies": {
+    "jasmine": "2.6.0",
+    "neon-cli": "0.1.18"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "ackermann-neon",
+  "repository": "git@github.com:ffflorian/ackermann.git",
+  "scripts": {
+    "build": "neon build",
+    "test": "jasmine",
+    "start": "yarn build && yarn test"
+  },
+  "version": "0.0.1"
+}
